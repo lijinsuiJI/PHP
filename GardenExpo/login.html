@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>北京园博会用户登录</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="main">
+
+    <div class="box-1">
+        <span style="color: #6fd508; left: 35%;">欢迎登录北京世界园艺博览会</span>
+    </div>
+    <div class="box-2">
+        <form action="login.php" method="post">
+            <!--operation == 1 登录操作-->
+            <div class="box-2-1">
+                <span style="color: #6fd508;">登录身份：</span>
+                <span style="color: #6fd508;"><input type="radio" class="rule" name="rule" value="1">普通用户</span>
+                <span style="color: #6fd508;"><input type="radio" class="rule" name="rule" value="2">管理员</span>
+            </div>
+            <input type="hidden" name="operation" value="1">
+            <span style="color: #6fd508;">用户名：<input type="text" id="username" name="username"></span>
+            <p id="msg1" style="color: red"></p>
+            <br>
+            <span style="color: #6fd508;">密&ensp;&ensp;码：<input type="password" id="password" name="password"></span>
+            <a href="#">忘记密码</a>
+            <p id="msg2" style="color: red"></p>
+            <div class="box-2-2">
+                <input class="login" id="login" value="登录" type="submit" style="margin-top: 40px;font-size: 20px;width: 100px;height: 40px; color: #6fd508; background-color: #fff; border:none;">
+                <button class="register" id="register" style="border:none;background-color: #fff;"><a href="register.html" style="color: #6fd508; ">注册</a></button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+
+.main {
+    width: 100%;
+}
+
+.main .head {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.main .box-1 {
+    width: 350px;
+    height: 600px;
+    box-sizing: border-box;
+    border: solid #Fff 1px;
+    background: linear-gradient(to bottom, #ffffff 0%,#6fd508 100%);
+}
+
+.main .box-1 .box-1-1 {
+    width: inherit;
+    height: 100px;
+    line-height: inherit;
+    display: flex;
+    margin-top: 50px;
+}
+
+.main .box-1 .box-1-1 img {
+    display: inline-block;
+    width: 80px;
+    height: 70px;
+    margin-left: 30px;
+
+}
+
+.main .box-1 .box-1-1 .box-1-1-1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+    height: 70px;
+}
+
+.main .box-1 .box-1-1 .box-1-1-1 a {
+    display: inline-block;
+    color: #252525;
+    width: inherit;
+    height: 50%;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main .box-1 .box-1-1 .box-1-1-1 .text1 {
+    margin-top: 10px;
+}
+
+.main .box-1 .box-1-1 .box-1-1-1 .text2 {
+    font-size: 12px;
+}
+
+.main .box-1 .box-1-2 {
+    width: inherit;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.main .box-1 .box-1-2 a {
+    display: inline-block;
+    color: #333333;
+    width: 200px;
+    height: 25%;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 70px;
+    box-sizing: border-box;
+    /*border-top: solid #191970 1px;*/
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.main .box-1 .box-1-2 .my {
+    box-sizing: border-box;
+    /*border-bottom: solid #191970 1px;*/
+}
+
+.main .box-1 .box-1-2 .information {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+
+.main .box-1 .box-1-2 .information ul {
+    list-style: none;
+    position: absolute;
+    left: 180px;
+    top: -50px;
+    margin: 30px 0;
+    display: none;
+    cursor: pointer;
+}
+
+.main .box-1 .box-1-2 .information ul li {
+    display: block;
+    text-align: left;
+    width: 200px;
+    height: 58px;
+    line-height: 58px;
+    border-bottom: 1px solid #483D8B;
+    background-color: #F8F8FF;
+    color: black;
+    font-size: 17px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.main .box-1 .box-1-2 .information ul .de {
+    border-bottom: none;
+}
+
+.main .box-1 .box-1-2 .mg {
+    width: 200px;
+    height: 50px;
+}
+
+.main .box-1 .box-1-2 .mg:hover ul {
+    display: block;
+}
+
+.main .box-2 {
+    width: 820px;
+    margin: 0 auto;
+}
+
+.main .box-2 .box-2-1 {
+    width: inherit;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+.main .box-2 .box-2-1 span {
+    display: inline-block;
+    width: 770px;
+    height: 70px;
+    line-height: 70px;
+    color: #252525;
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-bottom: solid #191970 1px;
+}
