@@ -46,9 +46,9 @@
             <div class="box-1-1-2">
                 <ul>
                     <li><a href="index.php">网站首页</a></li>
-                    <li><a href="index.php">园博导览</a>
+                    <li><a href="index.php">世园导览</a>
                         <ul>
-                            <li><a href="News.php">园博资讯</a></li>
+                            <li><a href="News.php">世园资讯</a></li>
                             <li><a href="garden.php">主展馆</a></li>
                         </ul>
                     </li>
@@ -56,12 +56,18 @@
                         <ul>
                             <li><a href="ticket.php">购票</a></li>
                             <li><a href="strategy.php">参观攻略</a></li>
-                            <li><a href="active.php">园博活动</a></li>
+                            <li><a href="active.php">世园活动</a></li>
                         </ul>
                     </li>
                     <li><a href="message.php">网站留言</a></li>
-                    <li><a href="science.php">园博科普</a></li>
-                    <li><a href="my.php">个人中心</a></li>
+                    <li><a href="science.php">世园科普</a></li>
+                    <li><a href="myDetail.php">个人中心</a>
+                        <ul>
+                            <li><a href="my.php">个人留言</a></li>
+                            <li><a href="ticketDetail.php">我的电子票</a></li>
+                            <li><a href="password.php">修改密码</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <!--注册登录-->
@@ -83,9 +89,9 @@
     <!--第三部分 轮播图-->
     <div class="swiper-container" id="s1">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href="gardenDetail.php"><img src="img/银杏大道1.jpg"></a></div>
-            <div class="swiper-slide"><a href="gardenDetail.php"><img src="img/永定塔4.jpg"></a></div>
-            <div class="swiper-slide"><a href="gardenDetail.php"><img src="img/园博湖3.jpg"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/中国馆.jpg"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/中国馆.png"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="img/中国馆1.png"></a></div>
         </div>
         <!-- 如果需要分页器 -->
         <div class="swiper-pagination"></div>
@@ -99,16 +105,16 @@
         <div class="box-2-2">
             <div class="box-2-2-1">
                 <div class="box-2-2-1-1">
-                    <img src="img/江苏桃花.jpg">
-                    <span>江苏如皋</span>
+                    <img src="img/新闻.jpg">
+                    <span>荣誉日活动</span>
                     <div class="a">
-                        <span> 花木之乡”春光好“桃花盛宴”醉了游人</span>
+                        <span> 世界旅游城市联合会荣誉日活动在举行中</span>
                     </div>
                 </div>
             </div>
             <div class="box-2-2-2">
-                <span class="wz">江苏如皋</span>
-                <span>4月2日消息：30日，春光烂漫。位于如皋市磨头镇的百亩桃花开满枝头，簇簇浓烈芬芳的花朵似绯云一片，又如云霞万朵。当天，“金磨桃花缘”桃花节开幕，引来八方游客尽享“桃花盛宴”。 </span>
+                <span class="wz">世界旅游城市联合会荣誉日</span>
+                <span>5月28日消息：世界旅游城市联合会荣誉日活动在园区国际馆举行。嘉宾们首先参观了北京世园会国际馆。活动中，世界旅游城市联合会展位进行了会员推介及媒体宣传，随后还开展了洽谈活动。</span>
                 <a href="#">更多</a>
             </div>
         </div>
@@ -132,29 +138,29 @@
     </div>
     <!--第五部分 园区-->
     <div class="box-3">
-        <div class="box-3-1"><span>园博美景</span></div>
+        <div class="box-3-1"><span>世园美景</span></div>
         <div class="box-3-2">
             <div class="box-3-2-1">
-                <img src="img/银杏大道1.jpg">
-                <span class="wz">银杏大道</span>
-                <span>秋色正浓时节，园博园像是被浓墨重彩渲染了一番似的，处处色彩缤纷，绚丽多彩。</span>
+                <img src="img/中国馆1.png">
+                <span class="wz">中国馆</span>
+                <span>以宋代著名青绿山水《千里江山图》长卷为主题，以永生苔藓作为绘画材料再现经典画卷。</span>
             </div>
             <div class="box-3-2-1">
-                <img src="img/银杏大道1.jpg">
-                <span class="wz">银杏大道</span>
-                <span>秋色正浓时节，园博园像是被浓墨重彩渲染了一番似的，处处色彩缤纷，绚丽多彩。</span>
+                <img src="img/植物馆.png">
+                <span class="wz">植物馆</span>
+                <span>这个作品位于屋顶东南角，位置十分显眼。从位置待遇上我们就能看出，它是植物馆的“流量担当”。</span>
 
             </div>
             <div class="box-3-2-1">
-                <img src="img/银杏大道1.jpg">
-                <span class="wz">银杏大道</span>
-                <span>秋色正浓时节，园博园像是被浓墨重彩渲染了一番似的，处处色彩缤纷，绚丽多彩。</span>
+                <img src="img/国际馆.png">
+                <span class="wz">国际馆</span>
+                <span>国内首创大型透景画壁展项。以生命的迁徙与自然的和谐共生为主线，展开一场关于园艺诗情画意的巡游之旅。</span>
 
             </div>
             <div class="box-3-2-1">
-                <img src="img/银杏大道1.jpg">
-                <span class="wz">银杏大道</span>
-                <span>秋色正浓时节，园博园像是被浓墨重彩渲染了一番似的，处处色彩缤纷，绚丽多彩。</span>
+                <img src="img/生活体验馆.jpg">
+                <span class="wz">生活体验馆</span>
+                <span>在生活体验馆还可以体验本草文化、了解举办地延庆的地域特色和产业成果，交互体验气象、航空航天与园艺、与生活的相互联系。</span>
 
             </div>
         </div>
@@ -164,7 +170,7 @@
     <!--尾部-->
     <div class="banner-wrapper1">
         <span class="time1">实时通讯</span>
-        <span class="time2">北京园博园地址：北京市丰台区长辛店镇射击场路15号</span>
+        <span class="time2">北京世界园艺博览会地址：北京市石景山区阜石路159号首钢体育大厦</span>
         <input type="text" placeholder=" 请输入您的邮箱地址" class="text">
         <span class="send">寄给我</span>
         <div class="last">

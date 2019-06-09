@@ -53,20 +53,20 @@
     <div class="head">
         <div class="box-1">
             <div class="box-1-1">
-                <img src="img/logo.png" >
+                <img src="img/2.png" >
                 <div class="box-1-1-1">
                     <a href="#" class="text1">后台管理系统</a>
                     <a href="#" class="text2">Background Management System</a>
                 </div>
             </div>
             <div class="box-1-2">
-                <a href="admin.php" class="index">首页</a>
+                <a href="userDetail.php" class="index">用户管理</a>
                 <div class="mg">
-                    <a class="garden">园博信息管理</a>
+                    <a class="garden">世园信息管理</a>
                     <div class="box-1-2-1 information">
                         <ul>
-                            <li><a href="updateNews.php">更新园博资讯</a></li>
-                            <li><a href="deleteNews.php">删除园博资讯</a></li>
+                            <li><a href="updateNews.php">更新世园资讯</a></li>
+                            <li><a href="deleteNews.php">删除世园资讯</a></li>
                             <li><a href="updateGarden.php">更新园区信息</a></li>
                             <li class="de"><a href="deleteGarden.php">删除园区信息</a></li>
                         </ul>
@@ -76,7 +76,7 @@
                     <a class="message">留言信息管理</a>
                     <div class="box-1-2-2 information">
                         <ul>
-                            <li><a href="#">警告用户</a></li>
+                            <!-- <li><a href="#">警告用户</a></li> -->
                             <li><a href="deleteMessage.php">删除留言</a></li>
                         </ul>
                     </div>
@@ -85,7 +85,7 @@
                     <a class="my">个人信息管理</a>
                     <div class="box-1-2-3 information">
                         <ul>
-                            <li><a href="#">查看个人信息</a></li>
+                            <!-- <li><a href="#">查看个人信息</a></li> -->
                             <li><a href="updatePassword.php">修改密码</a></li>
                         </ul>
                     </div>
@@ -98,13 +98,17 @@
                     <?php
                         $link = mysqli_connect('localhost','root','12345678','garden');
                         if (!$link) die("数据库连接错误");
-                        if (isset($_COOKIE['login']) && $_COOKIE['login'] ==1 ) {
+                        if (isset($_COOKIE['login']) && $_COOKIE['login'] ==2 ) {
                             echo "欢迎，{$_COOKIE['aname']}";
                     ?>
                 </span>
             </div>
             <div class="box-2-2">
                 <form action="updateP.php" method="post">
+                    <div class="box-2-1-8">
+                        <span >旧密码</span>
+                        <input type="password" name="password1">
+                    </div>
                     <div class="box-2-1-8">
                         <span >新密码</span>
                         <input type="password" name="password">

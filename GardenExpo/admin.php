@@ -30,13 +30,13 @@
                 </div>
             </div>
             <div class="box-1-2">
-                <a href="#" class="index">首页</a>
+                <a href="userDetail.php" class="index">用户管理</a>
                 <div class="mg">
-                    <a class="garden">园博信息管理</a>
+                    <a class="garden">世园信息管理</a>
                     <div class="box-1-2-1 information">
                         <ul>
-                            <li><a href="updateNews.php">更新园博资讯</a></li>
-                            <li><a href="deleteNews.php">删除园博资讯</a></li>
+                            <li><a href="updateNews.php">更新世园资讯</a></li>
+                            <li><a href="deleteNews.php">删除世园资讯</a></li>
                             <li><a href="updateGarden.php">更新园区信息</a></li>
                             <li class="de"><a href="deleteGarden.php">删除园区信息</a></li>
                         </ul>
@@ -55,7 +55,7 @@
                     <a class="my">个人信息管理</a>
                     <div class="box-1-2-3 information">
                         <ul>
-                            <li><a href="#">查看个人信息</a></li>
+                            <!-- <li><a href="#">查看个人信息</a></li> -->
                             <li><a href="updatePassword.php">修改密码</a></li>
                         </ul>
                     </div>
@@ -65,12 +65,12 @@
         <div class="box-2">
             <div class="box-2-1">
                 <span>
-                    欢迎
+                    
                     <?php
                         $link = mysqli_connect('localhost','root','12345678','garden');
                         if (!$link) die("数据库连接错误");
-                        if (isset($_COOKIE['login']) && $_COOKIE['login'] ==1 ) {
-                            echo "{$_COOKIE['aname']}";
+                        if (isset($_COOKIE['login']) && $_COOKIE['login'] ==2 ) {
+                            echo "欢迎，{$_COOKIE['aname']}";
                         ?>
                         <?php
                         }else{

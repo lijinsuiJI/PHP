@@ -77,13 +77,13 @@
                 </div>
             </div>
             <div class="box-1-2">
-                <a href="admin.php" class="index">首页</a>
+                <a href="userDetail.php" class="index">用户管理</a>
                 <div class="mg">
-                    <a class="garden">园博信息管理</a>
+                    <a class="garden">世园信息管理</a>
                     <div class="box-1-2-1 information">
                         <ul>
-                            <li><a href="updateNews.php">更新园博资讯</a></li>
-                            <li><a href="deleteNews.php">删除园博资讯</a></li>
+                            <li><a href="updateNews.php">更新世园资讯</a></li>
+                            <li><a href="deleteNews.php">删除世园资讯</a></li>
                             <li><a href="updateGarden.php">更新园区信息</a></li>
                             <li class="de"><a href="deleteGarden.php">删除园区信息</a></li>
                         </ul>
@@ -115,20 +115,24 @@
                     <?php
                         $link = mysqli_connect('localhost','root','12345678','garden');
                         if (!$link) die("数据库连接错误");
-                        if (isset($_COOKIE['login']) && $_COOKIE['login'] ==1 ) {
+                        if (isset($_COOKIE['login']) && $_COOKIE['login'] ==2 ) {
                             echo "欢迎，{$_COOKIE['aname']}";
                     ?>
                 </span>
             </div>
             <div class="box-2-2">
-                <form action="updateG.php" method="post">
+                <form action="updateG.php" method="post" enctype="multipart/form-data">
                     <div class="box-2-1-8">
                         <span >标题</span>
-                        <input type="text" name="title">
+                        <input type="text" name="title" required="required">
                     </div>
                     <div class="box-2-1-9">
                         <span>内容</span>
-                        <textarea placeholder="请输入留言内容！" name="detail"></textarea>
+                        <textarea placeholder="请输入园区描述！" name="detail"></textarea>
+                    </div>
+                    <div class="box-2-1-9" style="height: 60px;line-height: 60px;">
+                        <span>上传图片</span>
+                        <input type="file" name="file">
                     </div>
                     <div class="box-2-1-10">
                         <input type="submit" value="发表" class="fb" style="display: block;width: 100px;height: 40px;line-height: 40px;font-size: 16px;margin-top: 20px;margin-left: 92px;">

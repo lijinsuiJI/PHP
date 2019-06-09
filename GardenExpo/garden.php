@@ -36,9 +36,9 @@
                 <div class="box-1-1-2">
                     <ul>
                         <li><a href="index.php">网站首页</a></li>
-                        <li><a href="index.php">园博导览</a>
+                        <li><a href="index.php">世园导览</a>
                             <ul>
-                                <li><a href="News.php">园博资讯</a></li>
+                                <li><a href="News.php">世园资讯</a></li>
                                 <li><a href="garden.php">主展馆</a></li>
                             </ul>
                         </li>
@@ -46,12 +46,18 @@
                             <ul>
                                 <li><a href="ticket.php">购票</a></li>
                                 <li><a href="strategy.php">参观攻略</a></li>
-                                <li><a href="active.php">园博活动</a></li>
+                                <li><a href="active.php">世园活动</a></li>
                             </ul>
                         </li>
                         <li><a href="message.php">网站留言</a></li>
-                        <li><a href="science.php">园博科普</a></li>
-                        <li><a href="my.php">个人中心</a></li>
+                        <li><a href="science.php">世园科普</a></li>
+                        <li><a href="myDetail.php">个人中心</a>
+                            <ul>
+                                <li><a href="my.php">个人留言</a></li>
+                                <li><a href="ticketDetail.php">我的电子票</a></li>
+                                <li><a href="password.php">修改密码</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <!--注册登录-->
@@ -73,39 +79,26 @@
         <!--第三部分 展馆-->
         <div class="box-2">
             <div class="box-2-1">
-                <div class="box-2-1-1">
+                
                     <?php
                     $link = mysqli_connect('localhost','root','12345678','garden');
+                    $link->query("set names'utf8'");
+                    $link->set_charset('utf8_general_ci');
                     if (!$link) die("数据库连接错误");
                     $sql = "SELECT * FROM garden";
                     $result = mysqli_query($link,$sql);
                     if(!$result) die("数据库查询错误".$sql);
                     while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
-                        echo "<a href=\"gardenDetail.php?pid={$row['pid']}\"><img src=\"img/banner01.jpg\"></a>";
+                        echo "<div class=\"box-2-1-1\">";
+                        $imagedir=$row['photo'];
+                        echo "<a href=\"gardenDetail.php?pid={$row['pid']}\"><img src=\"{$imagedir}\"></a>";
                         echo "<span><a href=\"gardenDetail.php?pid={$row['pid']}\">{$row['pname']}</a></span>
                               <span>{$row['content']}</span>";
                         echo "<a href=\"gardenDetail.php?pid={$row['pid']}\" class=\"see\">查看</a>";
+                        echo "</div>";
                     }
                     ?>
-                </div>
-                <div class="box-2-1-1">
-                    <a href="gardenDetail.html"><img src="img/banner01.jpg"></a>
-                    <span><a href="gardenDetail.html">杭州园</a></span>
-                    <span>杭州园的主题是西湖十景之“花港观鱼”。花港观鱼是十景中唯一含有“赏鱼”意趣的景观。我们造园的理念是“源于自然又蕴含诗意”，西湖不但有自然山水之美，更有丰富的人文历史内涵...</span>
-                    <a href="gardenDetail.html" class="see">查看</a>
-                </div>
-                <div class="box-2-1-1">
-                    <a href="gardenDetail.html"><img src="img/banner01.jpg"></a>
-                    <span><a href="gardenDetail.html">杭州园</a></span>
-                    <span>杭州园的主题是西湖十景之“花港观鱼”。花港观鱼是十景中唯一含有“赏鱼”意趣的景观。我们造园的理念是“源于自然又蕴含诗意”，西湖不但有自然山水之美，更有丰富的人文历史内涵...</span>
-                    <a href="gardenDetail.html" class="see">查看</a>
-                </div>
-                <div class="box-2-1-1">
-                    <a href="gardenDetail.html"><img src="img/banner01.jpg"></a>
-                    <span><a href="gardenDetail.html">杭州园</a></span>
-                    <span>杭州园的主题是西湖十景之“花港观鱼”。花港观鱼是十景中唯一含有“赏鱼”意趣的景观。我们造园的理念是“源于自然又蕴含诗意”，西湖不但有自然山水之美，更有丰富的人文历史内涵...</span>
-                    <a href="gardenDetail.html" class="see">查看</a>
-                </div>
+                    
             </div>
             <div class="box-2-2">
                 <div class="box-2-2-1">
@@ -150,7 +143,7 @@
     <!--尾部-->
     <div class="banner-wrapper1">
         <span class="time1">实时通讯</span>
-        <span class="time2">北京园博园地址：北京市丰台区长辛店镇射击场路15号</span>
+        <span class="time2">北京世界园艺博览会地址：北京市石景山区阜石路159号首钢体育大厦</span>
         <input type="text" placeholder=" 请输入您的邮箱地址" class="text">
         <span class="send">寄给我</span>
         <div class="last">

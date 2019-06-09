@@ -36,7 +36,7 @@ if (strlen($username)==0||strlen($password)==0) {
         	$user = mysqli_fetch_array($result,MYSQL_ASSOC);
         	$aid = $user['aid'];
         	$aname = $user['aname'];
-			setcookie('login',1,time()+60*10);
+			setcookie('login',2,time()+60*10);
 			setcookie('aname',$aname,time()+60*10);
 			setcookie('aid',$aid,time()+60*10);
 			header("Location:admin.php");

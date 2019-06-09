@@ -51,7 +51,13 @@
                         </li>
                         <li><a href="message.php">网站留言</a></li>
                         <li><a href="science.php">园博科普</a></li>
-                        <li><a href="my.php">个人中心</a></li>
+                        <li><a href="myDetail.php">个人中心</a>
+                            <ul>
+                                <li><a href="my.php">个人留言</a></li>
+                                <li><a href="ticketDetail.php">我的电子票</a></li>
+                                <li><a href="password.php">修改密码</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <!--注册登录-->
@@ -78,34 +84,34 @@
                 </div>
                 <div class="box-2-1-4">
                     <div class="box-2-1-4-1">
-                        <a href="activeDetail.php"><img src="img/春.jpg"></a>
-                        <span class="wz"><a href="activeDetail.php">“花下醉，百媚生”</a></span>
-                        <span><a href="activeDetail.php">以牡丹、月季、樱花、丁香为主要拍摄内容，开展“四园闹春”摄影展。</a></span>
+                        <a href="activeDetail.php"><img src="img/活动.jpg"></a>
+                        <span class="wz"><a href="activeDetail.php">奇幻光影森林</a></span>
+                        <span><a href="activeDetail.php">奇幻光影森林集成了AR技术、人工智能技术、虚拟视觉技术、人机互动技术、</a></span>
                     </div>
                     <div class="box-2-1-4-1">
-                        <a href="activeDetail.php"><img src="img/春.jpg"></a>
-                        <span class="wz"><a href="activeDetail.php">“花下醉，百媚生”</a></span>
-                        <span><a href="activeDetail.php">以牡丹、月季、樱花、丁香为主要拍摄内容，开展“四园闹春”摄影展。</a></span>
+                        <a href="activeDetail.php"><img src="img/上海日活动.jpg"></a>
+                        <span class="wz"><a href="activeDetail.php">上海日活动</a></span>
+                        <span><a href="activeDetail.php">5月27日,演员在“上海日”活动中表演。</a></span>
                     </div>
                     <div class="box-2-1-4-1">
-                        <a href="activeDetail.php"><img src="img/春.jpg"></a>
-                        <span class="wz"><a href="activeDetail.php">“花下醉，百媚生”</a></span>
-                        <span><a href="activeDetail.php">以牡丹、月季、樱花、丁香为主要拍摄内容，开展“四园闹春”摄影展。</a></span>
+                        <a href="activeDetail.php"><img src="img/加勒比海盗日.jpg"></a>
+                        <span class="wz"><a href="activeDetail.php">加勒比音乐节活动</a></span>
+                        <span><a href="activeDetail.php">5月19日，表演者（前）在加勒比音乐节上献艺。</a></span>
                     </div>
                     <div class="box-2-1-4-1">
-                        <a href="activeDetail.php"><img src="img/春.jpg"></a>
-                        <span class="wz"><a href="activeDetail.php">“花下醉，百媚生”</a></span>
-                        <span><a href="activeDetail.php">以牡丹、月季、樱花、丁香为主要拍摄内容，开展“四园闹春”摄影展。</a></span>
+                        <a href="activeDetail.php"><img src="img/民族文化.jpg"></a>
+                        <span class="wz"><a href="activeDetail.php">世园会上展示民族文化</a></span>
+                        <span><a href="activeDetail.php">在北京世园会“内蒙古日”文化展示活动上展出的呼伦贝尔少数民族文创产品</a></span>
                     </div>
                     <div class="box-2-1-4-1">
-                        <a href="activeDetail.php"><img src="img/春.jpg"></a>
-                        <span class="wz"><a href="activeDetail.php">“花下醉，百媚生”</a></span>
-                        <span><a href="activeDetail.php">以牡丹、月季、樱花、丁香为主要拍摄内容，开展“四园闹春”摄影展。</a></span>
+                        <a href="activeDetail.php"><img src="img/世园之心.jpg"></a>
+                        <span class="wz"><a href="activeDetail.php">世园之心灯光展</a></span>
+                        <span><a href="activeDetail.php">青山绿水，花鸟为邻。5月4日至9月30日，长城脚下，妫水河畔</a></span>
                     </div>
                     <div class="box-2-1-4-1">
-                        <a href="activeDetail.php"><img src="img/春.jpg"></a>
-                        <span class="wz"><a href="activeDetail.php">“花下醉，百媚生”</a></span>
-                        <span><a href="activeDetail.php">以牡丹、月季、樱花、丁香为主要拍摄内容，开展“四园闹春”摄影展。</a></span>
+                        <a href="activeDetail.php"><img src="img/活动.jpg"></a>
+                        <span class="wz"><a href="activeDetail.php">奇幻光影森林</a></span>
+                        <span><a href="activeDetail.php">奇幻光影森林集成了AR技术、人工智能技术、虚拟视觉技术、人机互动技术、</a></span>
                     </div>
                 </div>
             </div>

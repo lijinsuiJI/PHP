@@ -2,6 +2,7 @@
 //发评论
 $detail1 = $_POST['detail1'];
 $uid = $_COOKIE['uid'];
+date_default_timezone_set('PRC');
 $comment_time = date('Y-m-d H:i:s',time());
 $mid=$_GET['mid'];
 $username = $_GET['username'];

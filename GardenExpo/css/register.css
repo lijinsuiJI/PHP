@@ -1,7 +1,7 @@
 
 .main .box .box-2 {
     width: inherit;
-    height: 700px;
+    height: 750px;
     box-sizing: border-box;
     border: 2px solid #6fd508;
     border-radius: 20px;
@@ -40,7 +40,7 @@
 }
 
 .main .box .box-2 .box-2-2 .text1,.text5 {
-    margin-left: 75px;
+    margin-left: 74px;
 }
 
 .main .box .box-2 .box-2-2 .text2,.text3,.text6 {

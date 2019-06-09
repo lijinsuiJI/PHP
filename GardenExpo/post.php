@@ -3,6 +3,7 @@
 $title = $_POST['title'];
 $detail = $_POST['detail'];
 $uid = $_COOKIE['uid'];
+date_default_timezone_set('PRC');
 $message_time = date('Y-m-d H:i:s',time());
 $link = mysqli_connect('localhost','root','12345678','garden');
 	if (!$link) die("数据库连接失败");

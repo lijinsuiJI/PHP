@@ -2,6 +2,7 @@
 //提交购票订单
 $ucode = $_COOKIE['ucode'];
 $price = $_GET['sum'];
+date_default_timezone_set('PRC');
 $ticket_time = date('Y-m-d H:i:s',time());
 $link = mysqli_connect('localhost','root','12345678','garden');
 if (!$link) die("数据库连接失败");

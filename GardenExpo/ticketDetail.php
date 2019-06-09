@@ -85,9 +85,9 @@
                 <div class="box-1-1-2">
                     <ul>
                         <li><a href="index.php">网站首页</a></li>
-                        <li><a href="index.php">园博导览</a>
+                        <li><a href="index.php">世园导览</a>
                             <ul>
-                                <li><a href="News.php">园博资讯</a></li>
+                                <li><a href="News.php">世园资讯</a></li>
                                 <li><a href="garden.php">主展馆</a></li>
                             </ul>
                         </li>
@@ -95,12 +95,18 @@
                             <ul>
                                 <li><a href="ticket.php">购票</a></li>
                                 <li><a href="strategy.php">参观攻略</a></li>
-                                <li><a href="active.php">园博活动</a></li>
+                                <li><a href="active.php">世园活动</a></li>
                             </ul>
                         </li>
                         <li><a href="message.php">网站留言</a></li>
-                        <li><a href="science.php">园博科普</a></li>
-                        <li><a href="my.php">个人中心</a></li>
+                        <li><a href="science.php">世园科普</a></li>
+                        <li><a href="my.php">个人中心</a>
+                            <ul>
+                                <li><a href="myDetail.php">个人留言</a></li>
+                                <li><a href="ticketDetail.php">我的电子票</a></li>
+                                <li><a href="password.php">修改密码</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <!--注册登录-->
@@ -121,17 +127,21 @@
         </div>
         <!--第三部分 购票详细信息-->
         <div class="box2">
+            <?php 
+                $sum = $_COOKIE['price'];
+                if (isset($_COOKIE['price']) && $_COOKIE['price'] ==$sum ) {
+             ?>
             <div class="box2-1">
                 <span>购票成功</span>
             </div>
             <div class="box2-2">
-            <span>订票用户：</span>
-            <span>
-                <?php
-                    $username = $_COOKIE['username'];
-                    echo $username;
-                ?>
-            </span>
+                <span>订票用户：</span>
+                <span>
+                    <?php
+                        $username = $_COOKIE['username'];
+                        echo $username;
+                    ?>
+                </span>
             </div>
             <div class="box2-3">
                 <span>订票身份证号码：</span>
@@ -150,7 +160,12 @@
                         echo $sum;
                     ?>
                 </span>
-            </div>         
+            </div>  
+            <?php
+                }else{
+                    echo "<a href='ticket.php' style='color: #6fd508;background-color: white;width: 415px;font-weight: 600; font-size:30px;margin-left: -80px;margin-top:150px'>您还没有购买，点击前往购买</a>";
+                }
+                ?>       
         </div>
         
     </div>
@@ -158,7 +173,7 @@
     <!--尾部-->
     <div class="banner-wrapper1">
         <span class="time1">实时通讯</span>
-        <span class="time2">北京园博园地址：北京市丰台区长辛店镇射击场路15号</span>
+        <span class="time2">北京世界园艺博览会地址：北京市石景山区阜石路159号首钢体育大厦</span>
         <input type="text" placeholder=" 请输入您的邮箱地址" class="text">
         <span class="send">寄给我</span>
         <div class="last">

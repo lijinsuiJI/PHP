@@ -35,9 +35,9 @@
                 <div class="box-1-1-2">
                     <ul>
                         <li><a href="index.php">网站首页</a></li>
-                        <li><a href="index.php">园博导览</a>
+                        <li><a href="index.php">世园导览</a>
                             <ul>
-                                <li><a href="News.php">园博资讯</a></li>
+                                <li><a href="News.php">世园资讯</a></li>
                                 <li><a href="garden.php">主展馆</a></li>
                             </ul>
                         </li>
@@ -45,12 +45,18 @@
                             <ul>
                                 <li><a href="ticket.php">购票</a></li>
                                 <li><a href="strategy.php">参观攻略</a></li>
-                                <li><a href="active.php">园博活动</a></li>
+                                <li><a href="active.php">世园活动</a></li>
                             </ul>
                         </li>
                         <li><a href="message.php">网站留言</a></li>
-                        <li><a href="science.php">园博科普</a></li>
-                        <li><a href="my.php">个人中心</a></li>
+                        <li><a href="science.php">世园科普</a></li>
+                        <li><a href="my.php">个人中心</a>
+                            <ul>
+                                <li><a href="myDetail.php">个人留言</a></li>
+                                <li><a href="ticketDetail.php">我的电子票</a></li>
+                                <li><a href="password.php">修改密码</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <!--注册登录-->
@@ -72,12 +78,12 @@
         <!--第三部分 购票头-->
         <div class="box-2">
             <div class="box-2-1">
-                <img src="img/银杏大道1.jpg">
+                <img src="img/国际馆.png">
             </div>
             
             <div class="box-2-2">
                 <div class="box-2-2-1">
-                    <span>北京园博园</span>
+                    <span>北京世园会</span>
                 </div>
                 <div class="box-2-2-2">
                     <span class="wz1">价格</span>
@@ -123,7 +129,7 @@
                 </div>
                 <div class="box-3-2-2">
                     <span>使用规则</span>
-                    <span class="wz">电子票验证地点：凭收到60开头的12位数字码或二维码到景区3号门门口售票处换票入园</span>
+                    <span class="wz">电子票验证地点：凭收到60开头的12位数字码或二维码到景区门口售票处换票入园</span>
                     <p>无需预约，消费高峰时可能需要等位，每张券限1人使用</p>
                     <p>券密码一旦验证即代表消费成功，不可申请“随时退款”和“过期退款”，请您合理安排验证时间</p>
 
@@ -136,7 +142,7 @@
     <!--尾部-->
     <div class="banner-wrapper1">
         <span class="time1">实时通讯</span>
-        <span class="time2">北京园博园地址：北京市丰台区长辛店镇射击场路15号</span>
+        <span class="time2">北京世界园艺博览会地址：北京市石景山区阜石路159号首钢体育大厦</span>
         <input type="text" placeholder=" 请输入您的邮箱地址" class="text">
         <span class="send">寄给我</span>
         <div class="last">

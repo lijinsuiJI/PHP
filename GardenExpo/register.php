@@ -42,7 +42,7 @@ else{
 	if (!$result) {
 		echo "SQL执行错误".$sql;
 	}else{
-		echo '<script language="JavaScript">;alert("{$username}注册成功。");location.href="login.html";</script>;';
+		echo "<script language=\"JavaScript\">;alert(\"{$username}注册成功。\");location.href=\"login.html\";</script>;";
 	}
 
 	}

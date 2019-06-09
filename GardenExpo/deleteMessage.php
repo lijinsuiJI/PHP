@@ -51,13 +51,13 @@
                 </div>
             </div>
             <div class="box-1-2">
-                <a href="#" class="index">首页</a>
+                <a href="userDetail.php" class="index">用户管理</a>
                 <div class="mg">
-                    <a class="garden">园博信息管理</a>
+                    <a class="garden">世园信息管理</a>
                     <div class="box-1-2-1 information">
                         <ul>
-                            <li><a href="updateNews.php">更新园博资讯</a></li>
-                            <li><a href="deleteNews.php">删除园博资讯</a></li>
+                            <li><a href="updateNews.php">更新世园资讯</a></li>
+                            <li><a href="deleteNews.php">删除世园资讯</a></li>
                             <li><a href="updateGarden.php">更新园区信息</a></li>
                             <li class="de"><a href="deleteGarden.php">删除园区信息</a></li>
                         </ul>
@@ -67,7 +67,7 @@
                     <a class="message">留言信息管理</a>
                     <div class="box-1-2-2 information">
                         <ul>
-                            <li><a href="#">警告用户</a></li>
+                            <!-- <li><a href="#">警告用户</a></li> -->
                             <li><a href="deleteMessage.php">删除留言</a></li>
                         </ul>
                     </div>
@@ -76,7 +76,7 @@
                     <a class="my">个人信息管理</a>
                     <div class="box-1-2-3 information">
                         <ul>
-                            <li><a href="#">查看个人信息</a></li>
+                            <!-- <li><a href="#">查看个人信息</a></li> -->
                             <li><a href="updatePassword.php">修改密码</a></li>
                         </ul>
                     </div>
@@ -90,7 +90,7 @@
                     <?php
                         $link = mysqli_connect('localhost','root','12345678','garden');
                         if (!$link) die("数据库连接错误");
-                        if (isset($_COOKIE['login']) && $_COOKIE['login'] ==1 ) {
+                        if (isset($_COOKIE['login']) && $_COOKIE['login'] ==2 ) {
                             echo "{$_COOKIE['aname']}";
                     ?>
                         
